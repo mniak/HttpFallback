@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1AC1CE9-961F-4C9C-BDA7-866EC1B49046}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HttpFallback.AspNet</RootNamespace>
+    <AssemblyName>HttpFallback.AspNet</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Http403Handler.cs" />
+    <Compile Include="Http404Handler.cs" />
+    <Compile Include="Http500Handler.cs" />
+    <Compile Include="Http501Handler.cs" />
+    <Compile Include="Http502Handler.cs" />
+    <Compile Include="Http503Handler.cs" />
+    <Compile Include="Http520Handler.cs" />
+    <Compile Include="Http521Handler.cs" />
+    <Compile Include="Http400Handler.cs" />
+    <Compile Include="Http533Handler.cs" />
+    <Compile Include="Http401Handler.cs" />
+    <Compile Include="HttpErrorHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\Pages\HTTP0.html">
+      <Link>Pages\HTTP0.html</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Pages\HTTP400.html">
+      <Link>Pages\HTTP400.html</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Pages\HTTP401.html">
+      <Link>Pages\HTTP401.html</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Pages\HTTP403.html">
+      <Link>Pages\HTTP403.html</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Pages\HTTP404.html">
+      <Link>Pages\HTTP404.html</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Pages\HTTP500.html">
+      <Link>Pages\HTTP500.html</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Pages\HTTP501.html">
+      <Link>Pages\HTTP501.html</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Pages\HTTP502.html">
+      <Link>Pages\HTTP502.html</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Pages\HTTP503.html">
+      <Link>Pages\HTTP503.html</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Pages\HTTP520.html">
+      <Link>Pages\HTTP520.html</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Pages\HTTP521.html">
+      <Link>Pages\HTTP521.html</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Pages\HTTP533.html">
+      <Link>Pages\HTTP533.html</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
