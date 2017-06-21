@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HttpFallbackOwinExtensions.cs" />
     <Compile Include="HttpFallbackOwinMiddleware.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
