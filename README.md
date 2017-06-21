@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/mniak/HttpFallback.svg?branch=master)](https://travis-ci.org/mniak/HttpFallback)
 # HttpFallback
 Libraries to throw fallback HTTP errors instead of 404
 
