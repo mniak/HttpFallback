@@ -45,3 +45,10 @@ Check the *Available error pages* topic to know which error codes can be used
 
 ## Acknowledgements
 The Error pages were copied from the project [HttpErrorPages](https://github.com/AndiDittrich/HttpErrorPages)
+
+
+## Donations
+
+Did you find this project useful? Consider making a donation.
+
+[![Donate via PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4K22SYGEXCS6Q)
