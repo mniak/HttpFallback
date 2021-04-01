@@ -84,7 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="microsoft.owin">
-      <Version>3.0.1</Version>
+      <Version>3.1.0</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
